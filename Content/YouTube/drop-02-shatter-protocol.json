@@ -1,0 +1,12 @@
+{
+  "voiceover_script": "Look closer. It's already breaking.\nLiquid metal under pressure.\nNeon shards where skin should be.\nEvery seam a fault line.\nEvery step, detonation.\nNothing here survives contact.\nThis isn't fabric. It's failure, weaponised.\nChrome splitting at two hundred frames a second.\nPressure is the point.\nThis is Shatter Protocol.\nWear the break.\nDrop live now. Link in bio. Move.",
+  "image_prompt": "Fictional androgynous streetwear model caught mid-motion in an explosive twisting lunge, arms driving outward, wearing a skin-tight liquid-metal bodysuit whose surface is fracturing in real time into hundreds of razor-edged neon shards that peel away from the torso and shoulders, molten chrome tension lines stretching between the breaking plates, hot magenta and acid-green light bleeding out from beneath the fractures, layered mesh underlayer visible through the splits, hard directional strobe lighting with harsh magenta rim light and violent specular hits on every shard edge, dynamic low-angle wide shot on 24mm lens with slight motion blur on the extremities, environment of a blacked-out industrial hangar with strobing floodlights and suspended debris, chrome and hot-magenta color palette with acid-green accents against near-black, aggressive and violent mood, cinematic, hyperdetailed, 8k, editorial fashion photography, high-speed flash photography aesthetic, ultra sharp shard geometry, avoid: blurry, extra limbs, text artifacts, watermark, low detail, deformed hands",
+  "music_prompt": "glitchcore, breakcore, 170 BPM, distorted amen breaks, bitcrushed 808s, granular stutter fx, saw-wave stabs, violent, chaotic, relentless, instrumental",
+  "video_notes": [
+    "Cut every 0.5-0.8s on the beat, hard cuts only, no dissolves - drop 2-3 single-frame flash inserts of shard close-ups for impact",
+    "9:16 vertical, full-bleed, allow deliberate 1-frame jitter/datamosh artifacts on the hardest transitions",
+    "\"SHATTER PROTOCOL\" text stamp hits on the drop-name line, bold condensed font, glitch-in with RGB split and 3-frame shake",
+    "Captions burned in, high-contrast white with hot-magenta shadow, word-by-word pop-on locked tight to the voiceover",
+    "End card: 1.2s hold on a single suspended neon shard + \"LINK IN BIO\" CTA overlay, cut to black on the final downbeat"
+  ]
+}

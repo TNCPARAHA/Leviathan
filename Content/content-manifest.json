@@ -1,0 +1,370 @@
+{
+  "_readme": "Three YouTube uploads for an AI tools & automation channel. Each has a long-form video (Google Flow clips + pyxa.ai voiceover) and a companion Short. Consumed by Claude Code running locally on the PC, which assembles the clips. See ASSEMBLY-BRIEF.md in the same folder.",
+  "channel": {
+    "subject": "AI tools, automation, agentic workflows",
+    "audience": "technical enough to build, short on time - wants architecture and failure modes, not feature tours",
+    "tone": "calm authority. Never hype. Describing something you built, to someone who will build it too.",
+    "visual_style": "isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed",
+    "hard_rule": "Never ask any generator for a screen, dashboard, code editor or app window - it cannot render a real UI and will produce garbled nonsense. Represent software as physical mechanism: pipelines, valves, node graphs, chambers, vaults, filtration, flowing light."
+  },
+  "audio_direction": {
+    "flow_native_audio": "Let Flow generate ambient sound design only - mechanical hum, tonal resonance, room tone. Every flow_prompt ends with an explicit audio instruction that excludes speech and music.",
+    "why_no_speech": "Flow will invent dialogue if you let it. That collides with the pyxa.ai voiceover and there is no way to separate them after generation. Exclude it in the prompt, not in the edit.",
+    "why_no_music": "Flow's music cannot be beat-matched across clips and will jump at every cut. Add one continuous music bed in the edit instead.",
+    "voiceover": "pyxa.ai reads the 'narration' field of each scene, in order. One render per scene keeps timing controllable.",
+    "music_bed": "One continuous track under the whole video at low level. Direction per upload in 'music_direction'."
+  },
+  "uploads": [
+    {
+      "upload_id": "01",
+      "slug": "ai-that-makes-my-videos",
+      "youtube": {
+        "title": "I Built an AI That Makes My YouTube Videos For Me",
+        "description": "This video was made by the system it describes. One line of text goes in. A finished video comes out the other end - script, visuals, voice, music, all of it.\n\nHere's the architecture, why it's built on a strict data contract instead of loose text, and the one safety valve that stops it publishing garbage while I'm asleep.\n\nCHAPTERS\n0:00 This video made itself\n0:22 The problem with making content by hand\n1:00 The architecture, end to end\n1:24 Why the AI must return strict data\n2:02 Running a week of content in one go\n2:20 The safety valve\n3:18 What it costs and what it cannot do\n\nTHE STACK\nGoogle Flow for the visuals\npyxa.ai for the voiceover\nA language model for the script and the routing contract\nAssembled locally, uploaded private, reviewed before release\n\nThe most important design decision is in chapter 4. Everything else is plumbing.\n\n#AI #Automation #AIAutomation #ContentCreation #NoCode",
+        "tags": [
+          "ai automation",
+          "ai content creation",
+          "automated youtube channel",
+          "google flow",
+          "veo",
+          "ai video generation",
+          "ai voiceover",
+          "faceless youtube",
+          "ai workflow",
+          "agentic workflow",
+          "structured output",
+          "ai pipeline",
+          "automate content",
+          "claude code",
+          "ai tools 2026"
+        ],
+        "chapters": [
+          "0:00 This video made itself",
+          "0:22 The problem with making content by hand",
+          "1:00 The architecture, end to end",
+          "1:24 Why the AI must return strict data",
+          "2:02 Running a week of content in one go",
+          "2:20 The safety valve",
+          "3:18 What it costs and what it cannot do"
+        ]
+      },
+      "music_direction": "minimal tech house, around 108 BPM, warm analog bass, muted plucks, steady hi-hats. Focused and unobtrusive - it sits under a voice explaining something. Never epic, never trailer music.",
+      "scenes": [
+        {
+          "id": 1,
+          "narration": "This video was made by the system it is about. I wrote one line of text. Everything after that - the script you are hearing, the images you are looking at, the music underneath, and the upload itself - was generated and assembled without me touching it. I want to show you exactly how it works, because the interesting part is not the AI. It is the shape of the thing around the AI.",
+          "flow_prompt": "A single glowing thread of light travels into a dark machined enclosure and emerges from the far side as many parallel bright strands fanning outward, one seed becoming many outputs. Camera: slow dolly in along the thread, following it into the enclosure. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 22
+        },
+        {
+          "id": 2,
+          "narration": "Making a video by hand takes hours. Write the script. Find the visuals. Record the voice. Cut it together. Every one of those is a separate app and a separate context switch, and the cost is not the individual step. It is that you have to be present for all of them, in order, every single time.",
+          "flow_prompt": "A dark workbench scattered with disconnected mechanical tools, each isolated on its own small platform with visible gaps between them, cold unwelcoming light, nothing linking them. Camera: slow lateral truck left to right across the gaps. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 3,
+          "narration": "So the goal was never to make the AI more creative. It was to remove myself from the middle of it. One input at the front, one finished artifact at the back, and no human required in between unless something goes wrong.",
+          "flow_prompt": "A clean sealed pipeline crossing the frame with one entry port and one exit port, warm light pulsing through it steadily from one end to the other. Camera: static locked-off wide shot, only the light moves. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 18
+        },
+        {
+          "id": 4,
+          "narration": "Here is the shape. A brief goes into a language model that acts as a creative director. It does not write the video. It writes the instructions for four other systems - what to say, what to show, what it should sound like, and how to cut it. Those four run in parallel. An assembler stitches the results. The uploader publishes it.",
+          "flow_prompt": "An isometric node graph where a single input node branches into four parallel processing nodes that each pulse in turn, then converge into one output node, glowing connection lines carrying light along each path. Camera: slow orbit around the graph, revealing depth. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 24
+        },
+        {
+          "id": 5,
+          "narration": "The critical decision is that the creative director does not return prose. It returns a strict data structure with exactly four fields. Not a description of what should happen. A machine-readable object where every field has exactly one destination.",
+          "flow_prompt": "A precisely machined metal block with four distinct keyed slots of different shapes, each slot lit a different colour, four matching components hovering above and lowering into place. Camera: slow push in on the block as the components seat. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 18
+        },
+        {
+          "id": 6,
+          "narration": "That matters more than it sounds. If the model returns friendly prose, something downstream has to parse it, and that parser breaks the first time the model gets chatty. A strict contract means the routing is dumb. Field one goes here. Field two goes there. Dumb routing is reliable routing.",
+          "flow_prompt": "Four separate coloured streams of light flow from a single junction into four distinct receptacles without ever crossing or mixing, perfectly ordered separation. Camera: static overhead shot looking down on the junction. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 7,
+          "narration": "Once one brief works, a queue works. Paste in five briefs. A loop feeds them through one at a time, waits for each to finish, then advances. A week of content from one run, while I am doing something else entirely.",
+          "flow_prompt": "A carousel mechanism advances identical glowing capsules one at a time into a processing chamber, a queue of further capsules waiting behind receding into soft focus. Camera: slow tracking shot alongside the queue toward the chamber. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 18
+        },
+        {
+          "id": 8,
+          "narration": "But batching is exactly where this gets dangerous, so there is a valve. Before anything expensive runs, a check asks one question - does the output actually contain all four required fields. If yes, continue. If no, stop this one, log it, move to the next.",
+          "flow_prompt": "A precision gate valve mid-pipeline opens and closes decisively, one path beyond it brightly lit and flowing, the other sealed and dimmed. Camera: static medium shot on the valve mechanism as it actuates. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 9,
+          "narration": "That check exists because language models occasionally return malformed output, especially when you have turned the creativity up. Without the valve, one bad generation burns image credits, voice credits, music credits and a full render before anyone notices. With it, the bad one costs nothing.",
+          "flow_prompt": "Inside a dark chamber a single visibly faulty component is diverted sideways into a containment tray while the main line of identical good components continues past undisturbed. Camera: slow push in following the faulty component as it diverts. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 18
+        },
+        {
+          "id": 10,
+          "narration": "And every upload lands as private. Never public. The system builds the video, files it away, and stops. I review the batch, and I decide what goes out. Automation that publishes unattended is not a workflow. It is a liability with a schedule attached.",
+          "flow_prompt": "A row of sealed containers on a dark shelf each glowing softly from within, one of them lifted and opened by a human silhouette lit in warm light. Camera: slow pull back from the opened container to reveal the full row. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 11,
+          "narration": "The honest limits. It cannot show a real screen recording, because generated visuals cannot render a real interface. It cannot fact-check itself. And it has no taste - it will produce the mediocre version forever unless the brief is good. The system removed the labour. It did not remove the judgement.",
+          "flow_prompt": "An elegant automated mechanism runs flawlessly inside a bounded circle of warm light, beyond its edge undefined darkness it never reaches into. Camera: slow pull back revealing how small the lit circle is against the dark. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 22
+        },
+        {
+          "id": 12,
+          "narration": "If you want the architecture, the field contract, and the validation rule, they are in the description. Build the valve first. Everything else is easier to fix than a pipeline that fails silently and expensively.",
+          "flow_prompt": "The complete pipeline seen whole from above, running steadily and softly glowing, single input at one end and single output at the other, calm and resolved. Camera: very slow rise to a high overhead view of the whole system. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 16
+        }
+      ],
+      "short": {
+        "voiceover_script": "This video made itself.\nOne line of text in.\nFinished video out.\nScript, visuals, voice, music.\nI touched none of it.\nBut here's the part that matters.\nThe AI doesn't return prose.\nIt returns strict data. Four fields.\nEach one routes to a different machine.\nDumb routing is reliable routing.\nFull build on the channel.",
+        "flow_prompt": "Vertical 9:16 composition. A single glowing thread of light enters a dark machined enclosure at the top of frame and emerges below as four bright parallel strands descending into four separate mechanisms that light up in sequence. Camera: slow vertical descent following the strands downward. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+        "music_direction": "minimal tech house, around 112 BPM, warm analog bass, tight hi-hats, confident and forward-moving",
+        "edit_notes": [
+          "9:16 vertical full-bleed, under 60 seconds",
+          "Cut every 1.0-1.4s on the beat by reframing and punching into the single Flow clip - do not generate twelve separate clips for a Short",
+          "Give the line 'It returns strict data' one frame of black before it, then hold the four-way branch 2 seconds - longest hold in the cut, it is the payoff",
+          "Captions burned in, word-by-word pop-on, high-contrast white with cyan edge",
+          "End card: 1.5s hold, subscribe overlay only, no store CTA"
+        ]
+      }
+    },
+    {
+      "upload_id": "02",
+      "slug": "folder-that-triggers-itself",
+      "youtube": {
+        "title": "This Folder Runs an AI Workflow Every Time I Drop a File In It",
+        "description": "No dashboard. No button. I drop a file into a folder and two minutes later the work is done and an email is waiting for me.\n\nThis is the heartbeat pattern - a timer that wakes up, looks for new work, and does it. It is the simplest automation trigger there is and it replaces most of what people build buttons for.\n\nCHAPTERS\n0:00 Drop a file, walk away\n0:20 Why polling beats a button\n0:40 How the heartbeat actually works\n1:00 Marking work as done (the bug everyone hits)\n1:40 Chaining two AI models back to back\n2:18 Where I put the guardrail\n2:58 What this pattern is bad at\n\nTHE PATTERN\nA timer fires every 2 minutes\nIt scans a folder for files it has not seen\nFor each new file it runs the work and marks the file processed\nIt emails when the result is ready\n\nThe processed-list step in chapter 4 is the one everybody forgets, and it will re-run your entire folder until you add it.\n\n#AI #Automation #AIAutomation #NoCode #Workflow",
+        "tags": [
+          "automation",
+          "heartbeat trigger",
+          "polling automation",
+          "google drive automation",
+          "apps script",
+          "ai workflow",
+          "chaining ai models",
+          "no code automation",
+          "trigger automation",
+          "ai agent",
+          "workflow automation",
+          "automate google drive",
+          "claude code",
+          "ai pipeline",
+          "google flow"
+        ],
+        "chapters": [
+          "0:00 Drop a file, walk away",
+          "0:20 Why polling beats a button",
+          "0:40 How the heartbeat actually works",
+          "1:00 Marking work as done (the bug everyone hits)",
+          "1:40 Chaining two AI models back to back",
+          "2:18 Where I put the guardrail",
+          "2:58 What this pattern is bad at"
+        ]
+      },
+      "music_direction": "downtempo electronica, around 96 BPM, soft rhodes chords, muted kick, warm sub bass. Calm and patient with space in it.",
+      "scenes": [
+        {
+          "id": 1,
+          "narration": "I put a file in a folder. That is the entire interface. Two minutes later the work is finished and there is an email waiting. No dashboard, no button, no app open. The folder is the trigger, and the pattern behind it is the most useful automation idea I know.",
+          "flow_prompt": "A single small object is placed into a softly glowing recess in a dark surface and rings of light ripple outward from the point of contact. Camera: slow push in toward the recess as the ripples spread. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 2,
+          "narration": "Most people build a button. A button means you have to be there, in the right app, at the right moment. But the work does not arrive on a schedule - it arrives when you happen to have the idea. So the trigger should be the act of saving the file, not the act of pressing anything.",
+          "flow_prompt": "A single pristine illuminated button sits untouched on a pedestal while a fast bright stream of activity rushes past it in the background, never intersecting. Camera: static locked-off shot, button sharp in foreground, stream blurred behind. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 3,
+          "narration": "The mechanism is almost stupidly simple. A timer fires every two minutes. It wakes up, looks in a specific folder, and asks one question - is there anything here I have not seen before. Almost every time the answer is no, and it goes back to sleep costing nothing.",
+          "flow_prompt": "A single pulse of light travels slowly around a closed circular circuit in a dark chamber at a patient steady rhythm, the rest of the frame at rest. Camera: slow orbit around the circuit following the pulse. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 4,
+          "narration": "When the answer is yes, it takes that file and starts the work. And this is where the bug lives that everybody hits at least once. If you do not record that you have processed the file, the next heartbeat finds it again. And the next one. You do not get one run. You get a run every two minutes, forever, until you notice the bill.",
+          "flow_prompt": "A loop of light doubles back on itself and retraces the same segment over and over, each pass adding brightness until one point of the loop is uncomfortably overexposed. Camera: slow push in on the overheating point as it brightens. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 24
+        },
+        {
+          "id": 5,
+          "narration": "So the last thing every run does is add that file to a processed list. Small step, easy to skip, and it is the difference between an automation and a runaway. Test it by dropping in one file and watching for the second email that should never come.",
+          "flow_prompt": "A mechanical counter advances one notch with a decisive movement and a completed component slides into a separate sealed compartment. Camera: static close shot on the counter and compartment. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 16
+        },
+        {
+          "id": 6,
+          "narration": "Now the useful part - what happens between detection and delivery. I chain two models. The first one cleans and structures the raw input, because what I dump into a folder at midnight is not a well-formed prompt. It is a fragment.",
+          "flow_prompt": "A rough irregular shard travels into a refining chamber and emerges from the other side as a clean precise geometric form. Camera: slow lateral tracking shot following the shard through the chamber. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 18
+        },
+        {
+          "id": 7,
+          "narration": "The second model does the actual generation, working from that cleaned structure instead of my half-formed note. Two cheap calls in sequence beat one expensive call on bad input, every time. Garbage in, garbage out is not a saying about AI. It is a description of where to put your effort.",
+          "flow_prompt": "Two chambers connected in series, material passing from the first into the second and emerging noticeably brighter and more resolved than it entered. Camera: slow dolly following the material left to right through both chambers. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 8,
+          "narration": "Between those two steps sits a sanitiser. Before anything leaves my machine for a cloud model, it strips the things I have decided do not go to third-party AI. That list is mine and it is not up for negotiation by the automation.",
+          "flow_prompt": "A fine filtration membrane spans a pipeline, certain glowing particles caught and settling against it while the rest pass cleanly through into brighter space beyond. Camera: static medium shot on the membrane, particles collecting. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 9,
+          "narration": "That is worth saying plainly. The moment you automate a pipeline, you stop reading what goes through it. Whatever rule you would have applied by hand has to become a step in the chain, before the send, or it stops existing at all.",
+          "flow_prompt": "A guarded threshold in a dark corridor, warm private light on one side and cold open space on the other, a hard bright boundary line between them. Camera: slow push toward the threshold, stopping short of crossing it. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 10,
+          "narration": "What is this pattern bad at? Anything urgent. A two minute poll means a two minute wait, and tightening it to ten seconds multiplies your invocations for almost no benefit. It is also bad at anything needing a human decision partway through - the moment it has to stop and ask, the whole advantage evaporates.",
+          "flow_prompt": "A precise mechanism turns steadily at a measured unhurried pace inside its enclosure while outside a fast blurred stream rushes past in the opposite direction. Camera: static shot, sharp slow mechanism centre frame, motion-blurred rush behind. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 22
+        },
+        {
+          "id": 11,
+          "narration": "But for work that arrives unpredictably and can wait a couple of minutes, it is close to perfect. Drop the file. Close the laptop. The email arrives when it arrives.",
+          "flow_prompt": "A quiet dark room with a closed laptop on a surface and a single soft notification glow pulsing once on a small device beside it. Camera: static wide shot, very slow push in, single pulse of light. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 16
+        }
+      ],
+      "short": {
+        "voiceover_script": "I don't press a button.\nI drop a file in a folder.\nTwo minutes later the work is done.\nA timer wakes up. Checks the folder.\nFinds anything new. Runs it.\nBut here's the bug everyone hits.\nIf you don't mark the file as processed,\nit runs again. And again.\nEvery two minutes. Forever.\nOne line of code. Costs you a bill.\nFull breakdown on the channel.",
+        "flow_prompt": "Vertical 9:16 composition. A closed loop of glowing light in a dark chamber doubles back on itself and retraces the same segment repeatedly, each pass adding brightness until one point of the loop burns uncomfortably overexposed. Camera: slow push in on the overheating point. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+        "music_direction": "downtempo electronica, around 100 BPM, soft rhodes, muted kick, tense arpeggio - patient turning uneasy",
+        "edit_notes": [
+          "9:16 vertical full-bleed, under 60 seconds",
+          "Cut every 1.2-1.6s by reframing within the single Flow clip",
+          "Repeat a visual pulse on 'every two minutes', three times, faster each repetition, to sell the runaway",
+          "Hold 2s on the overexposed loop at 'Forever' - longest hold in the cut",
+          "Captions burned in, word-by-word pop-on, white with cyan edge. End card 1.5s, subscribe only"
+        ]
+      }
+    },
+    {
+      "upload_id": "03",
+      "slug": "one-keyword-to-report",
+      "youtube": {
+        "title": "One Keyword In, a Full Research Report Out - Built in an Afternoon",
+        "description": "I type one word. A few seconds later I have a structured research report I would otherwise have spent an afternoon assembling.\n\nThree moving parts, one of which most tutorials skip and then wonder why their automation dies in production.\n\nCHAPTERS\n0:00 One word in, a report out\n0:20 The three parts\n0:38 Why the webhook goes in the middle\n1:18 The prompt is the actual product\n2:00 Structured output beats a wall of text\n2:20 The failure everyone hits in production\n3:02 What I would not use this for\n\nTHE SHAPE\nA trigger sends one keyword to a webhook\nThe webhook calls a language model with a long, specific prompt\nThe response comes back structured, not as prose\nThe result renders where you asked for it\n\nChapter 4 is the one that matters. A generic prompt gives you a generic report, and a generic report is worse than no report because you will act on it.\n\n#AI #Automation #AIAutomation #Research #NoCode",
+        "tags": [
+          "ai research automation",
+          "webhook automation",
+          "ai report generation",
+          "no code ai",
+          "prompt engineering",
+          "structured output",
+          "ai agent",
+          "business intelligence ai",
+          "automate research",
+          "ai workflow",
+          "api automation",
+          "ai tools 2026",
+          "llm prompt",
+          "claude code",
+          "google flow"
+        ],
+        "chapters": [
+          "0:00 One word in, a report out",
+          "0:20 The three parts",
+          "0:38 Why the webhook goes in the middle",
+          "1:18 The prompt is the actual product",
+          "2:00 Structured output beats a wall of text",
+          "2:20 The failure everyone hits in production",
+          "3:02 What I would not use this for"
+        ]
+      },
+      "music_direction": "ambient techno, around 104 BPM, deep sub bass, sparse detuned stabs, granular pads. Cool and cerebral, stays out of the way.",
+      "scenes": [
+        {
+          "id": 1,
+          "narration": "I type a single word. A few seconds later I have a structured report - the landscape, who is doing what, where the gaps are. Work that used to be an afternoon of tabs. Three moving parts make it happen, and one of them is the part most tutorials skip.",
+          "flow_prompt": "A single small seed of light drops into a dark still reservoir and expands outward into an intricate ordered lattice of connected glowing points. Camera: slow rise from water level to overhead as the lattice spreads. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 2,
+          "narration": "Part one is the trigger - anything that can send text. Part two is a webhook, which is just a URL that waits. Part three is the language model that does the thinking. That is the whole architecture. The complexity is not in the wiring.",
+          "flow_prompt": "Three distinct mechanical modules of different shapes connected in a line by glowing conduits, light passing from the first through to the third. Camera: slow lateral truck along the line of modules. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 18
+        },
+        {
+          "id": 3,
+          "narration": "The webhook sits in the middle for one reason - it decouples the two ends. The thing that sends the keyword does not need to know anything about the model, the credentials, or the prompt. Change the model later and the front end never notices.",
+          "flow_prompt": "A central rotating coupling joins two independent shafts, one side turning freely while the other remains still, precise engineering tolerance visible. Camera: slow orbit around the coupling. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 4,
+          "narration": "Which means your API key lives in exactly one place, server side, never in the thing you are typing into. If you are building this and your key is sitting in the front end, stop and move it. That is not a style preference. That is the whole reason the middle layer exists.",
+          "flow_prompt": "A single glowing key sealed inside an armoured vault at the centre of a system, conduits radiating outward from the vault carrying light but never carrying the key. Camera: slow push in through the conduits toward the sealed vault. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 5,
+          "narration": "Now the part that actually determines whether this is useful. The prompt. Not the model, not the platform - the prompt. A vague prompt returns a confident, generic, useless report, and a generic report is worse than no report, because you will act on it.",
+          "flow_prompt": "Two identical transparent vessels side by side, the left filled with a dense intricate glowing crystalline lattice and the right filled with formless drifting grey vapour. Camera: slow lateral move from the crystalline vessel across to the vapour one. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 22
+        },
+        {
+          "id": 6,
+          "narration": "So mine is long and specific. It names the exact sections I want. It says who the reader is. It says what to do when the model does not know something, which is to say so rather than invent. And it fixes the output shape, so every report comes back looking the same.",
+          "flow_prompt": "A detailed engineered mould with precisely defined chambers, molten light pouring in and setting into a consistent repeated form that is lifted away. Camera: static shot on the mould as it fills and the form lifts out. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 7,
+          "narration": "That last one matters more than it sounds. Ask for prose and you get a wall of text you have to read end to end. Ask for a defined structure and you get something you can scan in fifteen seconds, compare against last week, and feed into the next step automatically.",
+          "flow_prompt": "A tangled dense mass of glowing thread on one side of frame resolves and reorganises into neat ordered parallel rows of light bars on the other. Camera: slow lateral truck following the transformation left to right. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 8,
+          "narration": "Here is the failure everyone hits in production. It works perfectly ten times, then returns something malformed - a truncated response, an extra sentence wrapped around the output, a field missing. If the next step assumes the response is well-formed, the whole chain breaks at the worst moment.",
+          "flow_prompt": "A precise assembly line runs smoothly until one visibly misshapen component arrives and the mechanism ahead of it begins to bind and jam. Camera: slow push in on the jamming mechanism, tension held. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 22
+        },
+        {
+          "id": 9,
+          "narration": "So validate before you use it. Check the response actually contains what you asked for. If it does, continue. If it does not, stop that run and log it. Ten lines of checking, and it is the difference between an automation you trust and one you have to watch.",
+          "flow_prompt": "A precision inspection gate sweeps a band of light across passing components and one is diverted sideways into a holding tray while the rest continue. Camera: static medium shot on the gate as the scan sweeps and diverts. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 20
+        },
+        {
+          "id": 10,
+          "narration": "What would I not use this for? Anything where being wrong is expensive. This gives you a fast, structured, plausible first pass - and plausible is exactly the risk. It is a starting point for your judgement, not a substitute for it. Treat the output as a draft written by someone confident and occasionally wrong.",
+          "flow_prompt": "An elegant instrument on a pedestal presents a clean glowing readout while a human silhouette leans in close to examine it rather than accepting it at a glance. Camera: slow push in past the silhouette toward the readout. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 22
+        },
+        {
+          "id": 11,
+          "narration": "Build the boring parts first. Key in one place, output in a fixed shape, validation before use. Do that and the interesting part - the prompt - is the only thing left to iterate on.",
+          "flow_prompt": "A compact finished machine runs steadily in a dark room, single input at one end and single output at the other, unglamorous and dependable. Camera: very slow pull back to reveal the whole machine. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+          "duration_seconds": 16
+        }
+      ],
+      "short": {
+        "voiceover_script": "One word in.\nFull research report out.\nThree parts. Trigger, webhook, model.\nBut the model isn't what makes it work.\nThe prompt is.\nVague prompt, confident generic report.\nAnd generic is worse than nothing.\nBecause you'll act on it.\nName the sections. Name the reader.\nTell it to admit what it doesn't know.\nFull build on the channel.",
+        "flow_prompt": "Vertical 9:16 composition. Two identical transparent vessels stand side by side on a dark surface, the left filled with a dense intricate glowing crystalline lattice and the right filled with formless drifting grey vapour, stark contrast in structure between them. Camera: slow lateral move from the crystalline vessel across to the vapour one. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.",
+        "music_direction": "ambient techno, around 108 BPM, deep sub bass, sparse stabs, granular pads - cerebral and driving",
+        "edit_notes": [
+          "9:16 vertical full-bleed, under 60 seconds",
+          "Cut every 1.1-1.5s by reframing within the single Flow clip",
+          "Hold 2s on the two-vessel contrast at 'generic is worse than nothing' - the whole Short exists for that line",
+          "Desaturate the vapour side slightly in the grade to widen the quality gap",
+          "Captions burned in, word-by-word pop-on, white with amber edge on the warning lines. End card 1.5s, subscribe only"
+        ]
+      }
+    }
+  ]
+}

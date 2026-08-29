@@ -1,0 +1,164 @@
+UPLOAD 01 WORKSHEET — "I Built an AI That Makes My YouTube Videos For Me"
+12 scenes, 3m56s total. Work top to bottom.
+
+For each scene: paste the FLOW prompt into Google Flow, generate at the stated
+duration, save the clip as scene-NN.mp4. Then paste the NARRATION into pyxa.ai
+and save as scene-NN.mp3. Keep the numbering - the assembler orders by it.
+
+========================================================================
+
+SCENE 01   —   22 seconds
+------------------------------------------------------------------------
+FLOW PROMPT  (save clip as scene-01.mp4)
+
+A single glowing thread of light travels into a dark machined enclosure and emerges from the far side as many parallel bright strands fanning outward, one seed becoming many outputs. Camera: slow dolly in along the thread, following it into the enclosure. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.
+
+NARRATION  (pyxa.ai, save as scene-01.mp3)
+
+This video was made by the system it is about. I wrote one line of text. Everything after that - the script you are hearing, the images you are looking at, the music underneath, and the upload itself - was generated and assembled without me touching it. I want to show you exactly how it works, because the interesting part is not the AI. It is the shape of the thing around the AI.
+
+========================================================================
+
+SCENE 02   —   20 seconds
+------------------------------------------------------------------------
+FLOW PROMPT  (save clip as scene-02.mp4)
+
+A dark workbench scattered with disconnected mechanical tools, each isolated on its own small platform with visible gaps between them, cold unwelcoming light, nothing linking them. Camera: slow lateral truck left to right across the gaps. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.
+
+NARRATION  (pyxa.ai, save as scene-02.mp3)
+
+Making a video by hand takes hours. Write the script. Find the visuals. Record the voice. Cut it together. Every one of those is a separate app and a separate context switch, and the cost is not the individual step. It is that you have to be present for all of them, in order, every single time.
+
+========================================================================
+
+SCENE 03   —   18 seconds
+------------------------------------------------------------------------
+FLOW PROMPT  (save clip as scene-03.mp4)
+
+A clean sealed pipeline crossing the frame with one entry port and one exit port, warm light pulsing through it steadily from one end to the other. Camera: static locked-off wide shot, only the light moves. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.
+
+NARRATION  (pyxa.ai, save as scene-03.mp3)
+
+So the goal was never to make the AI more creative. It was to remove myself from the middle of it. One input at the front, one finished artifact at the back, and no human required in between unless something goes wrong.
+
+========================================================================
+
+SCENE 04   —   24 seconds
+------------------------------------------------------------------------
+FLOW PROMPT  (save clip as scene-04.mp4)
+
+An isometric node graph where a single input node branches into four parallel processing nodes that each pulse in turn, then converge into one output node, glowing connection lines carrying light along each path. Camera: slow orbit around the graph, revealing depth. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.
+
+NARRATION  (pyxa.ai, save as scene-04.mp3)
+
+Here is the shape. A brief goes into a language model that acts as a creative director. It does not write the video. It writes the instructions for four other systems - what to say, what to show, what it should sound like, and how to cut it. Those four run in parallel. An assembler stitches the results. The uploader publishes it.
+
+========================================================================
+
+SCENE 05   —   18 seconds
+------------------------------------------------------------------------
+FLOW PROMPT  (save clip as scene-05.mp4)
+
+A precisely machined metal block with four distinct keyed slots of different shapes, each slot lit a different colour, four matching components hovering above and lowering into place. Camera: slow push in on the block as the components seat. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.
+
+NARRATION  (pyxa.ai, save as scene-05.mp3)
+
+The critical decision is that the creative director does not return prose. It returns a strict data structure with exactly four fields. Not a description of what should happen. A machine-readable object where every field has exactly one destination.
+
+========================================================================
+
+SCENE 06   —   20 seconds
+------------------------------------------------------------------------
+FLOW PROMPT  (save clip as scene-06.mp4)
+
+Four separate coloured streams of light flow from a single junction into four distinct receptacles without ever crossing or mixing, perfectly ordered separation. Camera: static overhead shot looking down on the junction. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.
+
+NARRATION  (pyxa.ai, save as scene-06.mp3)
+
+That matters more than it sounds. If the model returns friendly prose, something downstream has to parse it, and that parser breaks the first time the model gets chatty. A strict contract means the routing is dumb. Field one goes here. Field two goes there. Dumb routing is reliable routing.
+
+========================================================================
+
+SCENE 07   —   18 seconds
+------------------------------------------------------------------------
+FLOW PROMPT  (save clip as scene-07.mp4)
+
+A carousel mechanism advances identical glowing capsules one at a time into a processing chamber, a queue of further capsules waiting behind receding into soft focus. Camera: slow tracking shot alongside the queue toward the chamber. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.
+
+NARRATION  (pyxa.ai, save as scene-07.mp3)
+
+Once one brief works, a queue works. Paste in five briefs. A loop feeds them through one at a time, waits for each to finish, then advances. A week of content from one run, while I am doing something else entirely.
+
+========================================================================
+
+SCENE 08   —   20 seconds
+------------------------------------------------------------------------
+FLOW PROMPT  (save clip as scene-08.mp4)
+
+A precision gate valve mid-pipeline opens and closes decisively, one path beyond it brightly lit and flowing, the other sealed and dimmed. Camera: static medium shot on the valve mechanism as it actuates. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.
+
+NARRATION  (pyxa.ai, save as scene-08.mp3)
+
+But batching is exactly where this gets dangerous, so there is a valve. Before anything expensive runs, a check asks one question - does the output actually contain all four required fields. If yes, continue. If no, stop this one, log it, move to the next.
+
+========================================================================
+
+SCENE 09   —   18 seconds
+------------------------------------------------------------------------
+FLOW PROMPT  (save clip as scene-09.mp4)
+
+Inside a dark chamber a single visibly faulty component is diverted sideways into a containment tray while the main line of identical good components continues past undisturbed. Camera: slow push in following the faulty component as it diverts. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.
+
+NARRATION  (pyxa.ai, save as scene-09.mp3)
+
+That check exists because language models occasionally return malformed output, especially when you have turned the creativity up. Without the valve, one bad generation burns image credits, voice credits, music credits and a full render before anyone notices. With it, the bad one costs nothing.
+
+========================================================================
+
+SCENE 10   —   20 seconds
+------------------------------------------------------------------------
+FLOW PROMPT  (save clip as scene-10.mp4)
+
+A row of sealed containers on a dark shelf each glowing softly from within, one of them lifted and opened by a human silhouette lit in warm light. Camera: slow pull back from the opened container to reveal the full row. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.
+
+NARRATION  (pyxa.ai, save as scene-10.mp3)
+
+And every upload lands as private. Never public. The system builds the video, files it away, and stops. I review the batch, and I decide what goes out. Automation that publishes unattended is not a workflow. It is a liability with a schedule attached.
+
+========================================================================
+
+SCENE 11   —   22 seconds
+------------------------------------------------------------------------
+FLOW PROMPT  (save clip as scene-11.mp4)
+
+An elegant automated mechanism runs flawlessly inside a bounded circle of warm light, beyond its edge undefined darkness it never reaches into. Camera: slow pull back revealing how small the lit circle is against the dark. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.
+
+NARRATION  (pyxa.ai, save as scene-11.mp3)
+
+The honest limits. It cannot show a real screen recording, because generated visuals cannot render a real interface. It cannot fact-check itself. And it has no taste - it will produce the mediocre version forever unless the brief is good. The system removed the labour. It did not remove the judgement.
+
+========================================================================
+
+SCENE 12   —   16 seconds
+------------------------------------------------------------------------
+FLOW PROMPT  (save clip as scene-12.mp4)
+
+The complete pipeline seen whole from above, running steadily and softly glowing, single input at one end and single output at the other, calm and resolved. Camera: very slow rise to a high overhead view of the whole system. isometric technical illustration style, dark slate and deep navy palette, cyan and warm amber accent glow, clean matte 3D render, soft volumetric lighting, no text, no letters, no numbers, no signage, no UI, cinematic, highly detailed. Audio: ambient sound design only: low mechanical hum and soft tonal resonance. No speech, no voices, no dialogue, no music.
+
+NARRATION  (pyxa.ai, save as scene-12.mp3)
+
+If you want the architecture, the field contract, and the validation rule, they are in the description. Build the valve first. Everything else is easier to fix than a pipeline that fails silently and expensively.
+
+========================================================================
+
+MUSIC BED (one continuous track for the whole video)
+minimal tech house, around 108 BPM, warm analog bass, muted plucks, steady hi-hats. Focused and unobtrusive - it sits under a voice explaining something. Never epic, never trailer music.
+
+WHEN ALL 24 FILES EXIST
+Hand the folder to Claude Code on the PC with content-manifest.json and
+ASSEMBLY-BRIEF.md. It concatenates in scene order, lays the voiceover over the
+top, ducks Flow's ambient audio to about -18dB under the voice, adds captions
+and chapter cards as overlays, and recomputes the chapter timestamps if any
+clip came back a different length than requested.
+
+Then upload PRIVATE. Watch it once. Only then make it public.
